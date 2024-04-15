@@ -1,0 +1,26 @@
+Word vectors are a technique for entering word/text input into neural networds.
+
+Various techniques for creating wordvectors began in the 1990s,
+but they became widespread after Mikolov's 2013 Word2Vec paper showing how to
+economically create them, and over the last ten years, numerous sites have
+sprung up providing pre-computed word-embeddings for many different languages.
+
+Perhaps
+The neatest thing about word-embeddings is that they are the result of 
+applying an unsupervised algorithm to corpora which have a bunch of emergent
+properties. 
+
+Emergent properties:
+ - related word neighborhoods in the semantic space
+ - word analogies -- additive semantics
+ - cross-lingual transforms -- zero-shot word translation
+
+Word embeddings have some problems:
+OOV words
+homographs: words which are spelled the same but have different meanings
+   these 
+
+recently, some work has been done with 'context embeddings' which are 
+essentially a summary of hidden layers of transformers acting on sentences.
+Thus this scheme provides a look at how word is represented in a context
+in which
