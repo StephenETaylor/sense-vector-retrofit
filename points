@@ -17,10 +17,43 @@ Emergent properties:
 
 Word embeddings have some problems:
 OOV words
+
+Those related words are not necessarily synonyms, but words used in some of 
+the same contexts.  Related words are interesting but see below...
+
+word analogies are generally not reliable enough to be a useful tool,
+  but they can give a sense how well-trained a particular embedding is.
+  part of the problem is:
+
 homographs: words which are spelled the same but have different meanings
-   these 
+   these are the problem I have been looking at.
+   A well-known example is the English word 'bow', which has two
+   pronunciations:
+       'bou'  which is a weapon that shoots arrows
+       'bau'  which is a verb meaning to salute someone by bending over,
+              and a noun which describes the act.
+      
+        both of these have some relationship to curves, 'bou' can also
+        describe a bend in the road or a river.
+
+        'bow' with the 'bau' pronunciation also refers to the front of a ship,
+        and the wiktionary gives about a dozen more meanings, some of which
+	are derivative: for example, you play a viol with a bow, which,
+        although it doesn't shoot arrows, has a structure similar to the
+        weapon.
+	A knot with loops, is also called a 'bou'.
+ 
+        (There's another word pronounced 'bau', 'bough', a branch of a tree.
+	it comes from a different root, and it isn't a homograph, so it
+	it isn't an issue for word embeddings.)
+        
+       
+
+
 
 recently, some work has been done with 'context embeddings' which are 
 essentially a summary of hidden layers of transformers acting on sentences.
 Thus this scheme provides a look at how word is represented in a context
-in which
+in which the word is being used in a particular sense, but the context-embedding
+also contains information about the rest of the sentence.
+
