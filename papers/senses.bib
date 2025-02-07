@@ -1,3 +1,5 @@
+
+
 @inproceedings{NEURIPS2019_f8b932c7,
  author = {Balazevic, Ivana and Allen, Carl and Hospedales, Timothy},
  booktitle = {Advances in Neural Information Processing Systems},
@@ -74,6 +76,39 @@
     pages = "1428--1433",
 }
 
+@inproceedings{johansson-nieto-pina-2015-combining,
+    title = "Combining Relational and Distributional Knowledge for Word Sense Disambiguation",
+    author = "Johansson, Richard  and
+      Nieto Pi{\~n}a, Luis",
+    editor = "Megyesi, Be{\'a}ta",
+    booktitle = "Proceedings of the 20th Nordic Conference of Computational Linguistics ({NODALIDA} 2015)",
+    month = may,
+    year = "2015",
+    address = "Vilnius, Lithuania",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/W15-1811",
+    pages = "69--78",
+}
+
+@inproceedings{lee-chen-2017-muse,
+    title = "{MUSE}: Modularizing Unsupervised Sense Embeddings",
+    author = "Lee, Guang-He  and
+      Chen, Yun-Nung",
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1034/",
+    doi = "10.18653/v1/D17-1034",
+    pages = "327--337",
+    abstract = "This paper proposes to address the word sense ambiguity issue in an unsupervised manner, where word sense representations are learned along a word sense selection mechanism given contexts. Prior work focused on designing a single model to deliver both mechanisms, and thus suffered from either coarse-grained representation learning or inefficient sense selection. The proposed modular approach, MUSE, implements flexible modules to optimize distinct mechanisms, achieving the first purely sense-level representation learning system with linear-time sense selection. We leverage reinforcement learning to enable joint training on the proposed modules, and introduce various exploration techniques on sense selection for better robustness. The experiments on benchmark data show that the proposed approach achieves the state-of-the-art performance on synonym selection as well as on contextual word similarities in terms of MaxSimC."
+}
+
+
 @inproceedings{DBLP:conf/interspeech/MikolovKBCK10,
   author       = {Tom{\'{a}}s Mikolov and
                   Martin Karafi{\'{a}}t and
@@ -114,6 +149,16 @@
     url = "https://aclanthology.org/D14-1113",
     doi = "10.3115/v1/D14-1113",
     pages = "1059--1069",
+    notes = {\par
+	    Use a modificaton to Skipgram which chooses which vector to update
+		    based distance to context words; so each word has a set of
+		    vectors, which are context sensitive.
+	   Tested their embedding with Stanford’s Contextual Word 
+	    Similarities (SCWS) dataset (available for download from
+			    http://www-nlp.stanford.edu/~ehhuang/SCWS.zip)
+	   with  'wordsim353';
+	   and with the google analogy task.
+    }
 }
 
 @inproceedings{pelevina-etal-2016-making,
